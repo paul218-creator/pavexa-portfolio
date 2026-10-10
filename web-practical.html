@@ -138,7 +138,7 @@
                 min-height: 290px;
             }
         }
-    </style>
+    .practical-hero{position:relative}.bird-flock{position:absolute;top:0;left:50%;width:100vw;height:160px;overflow:hidden;transform:translateX(-50%);pointer-events:none;z-index:2}.flying-bird{position:absolute;top:42px;left:-72px;color:rgba(219,234,254,.78);animation:bird-flight 22s linear infinite;will-change:transform}.flying-bird svg{display:block;width:44px;height:24px;overflow:visible;animation:bird-flap 850ms ease-in-out infinite alternate;transform-origin:center}.flying-bird:nth-child(2){top:76px;animation-delay:-7s;animation-duration:27s}.flying-bird:nth-child(2) svg{width:30px;animation-delay:-250ms}.flying-bird:nth-child(3){top:27px;animation-delay:-14s;animation-duration:25s}.flying-bird:nth-child(3) svg{width:36px;animation-delay:-500ms}.flying-bird:nth-child(4){top:100px;animation-delay:-4s;animation-duration:30s}.flying-bird:nth-child(4) svg{width:25px;animation-delay:-350ms}.flying-bird:nth-child(5){top:55px;animation-delay:-18s;animation-duration:24s}.flying-bird:nth-child(5) svg{width:32px;animation-delay:-650ms}@keyframes bird-flight{from{transform:translate3d(-5vw,0,0)}50%{transform:translate3d(50vw,-12px,0)}to{transform:translate3d(110vw,7px,0)}}@keyframes bird-flap{from{transform:scaleY(.72) rotate(-3deg)}to{transform:scaleY(1) rotate(3deg)}}@media(max-width:760px){.bird-flock{height:130px}}@media(prefers-reduced-motion:reduce){.flying-bird,.flying-bird svg{animation:none}.flying-bird{opacity:.45}}     </style>
 </head>
 <body class="practical-page">
     <header>
@@ -149,7 +149,7 @@
     </header>
 
     <main>
-        <section class="container practical-hero">
+        <section class="container practical-hero">             <div class="bird-flock" aria-hidden="true">                 <span class="flying-bird"><svg viewBox="0 0 52 28"><path d="M3 19C11 7 18 7 26 19 34 7 41 7 49 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>                 <span class="flying-bird"><svg viewBox="0 0 52 28"><path d="M3 19C11 7 18 7 26 19 34 7 41 7 49 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>                 <span class="flying-bird"><svg viewBox="0 0 52 28"><path d="M3 19C11 7 18 7 26 19 34 7 41 7 49 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>                 <span class="flying-bird"><svg viewBox="0 0 52 28"><path d="M3 19C11 7 18 7 26 19 34 7 41 7 49 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>                 <span class="flying-bird"><svg viewBox="0 0 52 28"><path d="M3 19C11 7 18 7 26 19 34 7 41 7 49 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>             </div>
             <div>
                 <p class="eyebrow accent">Web practical · 2026</p>
                 <h1>Technology that moves you <span>forward.</span></h1>
