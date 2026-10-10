@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1120">
+    <title>PAVEXA Digital Studio | Web Practical</title>
+    <meta name="description" content="A web practical project for PAVEXA, a digital studio offering web design, development, and digital marketing.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .practical-page {
+            min-height: 100vh;
+        }
+
+        .practical-nav {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .practical-brand {
+            font-size: 1.15rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+        }
+
+        .practical-brand span,
+        .practical-hero h1 span {
+            color: var(--secondary);
+        }
+
+        .practical-back {
+            color: var(--muted);
+        }
+
+        .practical-back:hover,
+        .practical-back:focus-visible {
+            color: var(--text);
+        }
+
+        .practical-hero {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            align-items: center;
+            gap: 48px;
+            padding: 84px 0;
+        }
+
+        .practical-hero h1 {
+            max-width: 650px;
+            margin-bottom: 20px;
+            font-size: clamp(2.7rem, 6vw, 5rem);
+            line-height: 1.02;
+            letter-spacing: -0.06em;
+        }
+
+        .practical-hero p:not(.eyebrow) {
+            max-width: 560px;
+            color: var(--muted);
+        }
+
+        .practical-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 28px;
+        }
+
+        .practical-photo {
+            min-height: 390px;
+            border: 1px solid var(--line);
+            border-radius: 26px;
+            background:
+                linear-gradient(145deg, rgba(11, 17, 32, 0.02), rgba(11, 17, 32, 0.2)),
+                url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=85') center / cover;
+            box-shadow: var(--shadow);
+        }
+
+        .practical-services {
+            padding: 72px 0 90px;
+            border-top: 1px solid var(--line);
+        }
+
+        .practical-services h2 {
+            margin-bottom: 32px;
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.05em;
+        }
+
+        .practical-service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .practical-service {
+            padding: 26px;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            background: rgba(18, 29, 50, 0.8);
+        }
+
+        .practical-service h3 {
+            margin-bottom: 10px;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        .practical-service p {
+            color: var(--muted);
+        }
+
+        .practical-footer {
+            padding: 24px 0;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 760px) {
+            .practical-hero,
+            .practical-service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .practical-hero {
+                padding: 58px 0;
+            }
+
+            .practical-photo {
+                min-height: 290px;
+            }
+        }
+    </style>
+</head>
+<body class="practical-page">
+    <header>
+        <nav class="container practical-nav" aria-label="Practical project navigation">
+            <a class="practical-brand" href="index.html" aria-label="PAVEXA portfolio">PAV<span>EXA</span></a>
+            <a class="practical-back" href="index.html#projects">← Back to portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container practical-hero">
+            <div>
+                <p class="eyebrow accent">Web practical · 2026</p>
+                <h1>Technology that moves you <span>forward.</span></h1>
+                <p>
+                    PAVEXA creates modern digital experiences that help businesses grow and succeed online.
+                    Explore our web design, development, and digital marketing services.
+                </p>
+                <div class="practical-actions">
+                    <a class="primary-btn" href="#services">Explore services</a>
+                    <a class="secondary-btn" href="index.html#contact">Contact PAVEXA</a>
+                </div>
+            </div>
+            <div class="practical-photo" role="img" aria-label="Creative team collaborating around a table"></div>
+        </section>
+
+        <section class="practical-services">
+            <div class="container" id="services">
+                <p class="eyebrow accent">What we do</p>
+                <h2>Digital services built around your goals.</h2>
+                <div class="practical-service-grid">
+                    <article class="practical-service">
+                        <h3>Web Design</h3>
+                        <p>Beautiful, responsive websites built to connect with your audience and make your brand stand out.</p>
+                    </article>
+                    <article class="practical-service">
+                        <h3>Web Development</h3>
+                        <p>Custom web experiences built with care, designed to work smoothly across screen sizes and devices.</p>
+                    </article>
+                    <article class="practical-service">
+                        <h3>Digital Marketing</h3>
+                        <p>Thoughtful digital marketing to help your business reach the right people and grow its presence.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="practical-footer">
+        <div class="container">© 2026 PAVEXA · Web practical project</div>
+    </footer>
+</body>
+</html>
