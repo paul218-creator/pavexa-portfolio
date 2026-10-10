@@ -210,7 +210,7 @@
                     </ul>
                 </div>
 
-                <form class="contact-form" action="#" method="post">
+                <form class="contact-form">
                     <label>
                         <span>Name</span>
                         <input type="text" name="name" placeholder="Your name" required>
@@ -223,7 +223,7 @@
                         <span>Message</span>
                         <textarea name="message" placeholder="Tell me about your project" required></textarea>
                     </label>
-                    <button type="submit" class="primary-btn">Send Message</button>
+                    <button type="submit" class="primary-btn">Send via WhatsApp</button>
                 </form>
             </div>
         </section>
@@ -235,5 +235,6 @@
             <p>Designed for bold ideas.</p>
         </div>
     </footer>
-</body>
+<script>         document.querySelector('.contact-form').addEventListener('submit', (event) => {             event.preventDefault();             const formData = new FormData(event.currentTarget);             const message = [                 'Hello PAVEXA, my name is ' + formData.get('name') + '.',                 'My email is ' + formData.get('email') + '.',                 '',                 formData.get('message')             ].join('
+');             window.location.href = 'https://wa.me/2348149841551?text=' + encodeURIComponent(message);         });     </script> </body>
 </html>
